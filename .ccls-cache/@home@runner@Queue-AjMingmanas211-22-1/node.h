@@ -11,7 +11,7 @@ public:
   int get_value();
   void set_next(NODE *);
   NODE *get_next();
-  int get_order(){return order;} 
+  int get_order(){ return (order>=1&&order<=3) ?  order :  0;} 
 };
 
 typedef NODE *NodePtr;
@@ -48,7 +48,7 @@ NODE *NODE::get_next() { return nextPtr; }
 void NODE::set_next(NODE *t) { nextPtr = t; }
 
 NODE::~NODE() {
-  // cout<<"deleting " <<order<<endl;
+  //cout<<"deleting " <<order<<endl;
 }
 
 #endif

@@ -2,7 +2,7 @@
 
 class Queue {
   NodePtr headPtr, tailPtr;
-  int size;
+  int size=0;
 
 public:
   void enqueue(int, int);
